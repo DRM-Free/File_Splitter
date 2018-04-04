@@ -49,11 +49,12 @@ parsed_Params parse_params(int argc, char* argv[]) {
                 else if (argv[i] == (std::string)"-he")
                                 {
                                 	par.headerLines=std::stoi(argv[i + 1]);
+                                	++i;
                                 }
                 else if (argv[i] == (std::string)"-cy")
                                                 {
                 	par.cycle=std::stoi(argv[i + 1]);
-
+                	++i;
                                                 }
                 else
                 {
